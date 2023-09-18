@@ -57,7 +57,7 @@ export const TodosProvider = ({children}:TodosProviderProps) => {
     //deleting the data for todo
     const handleDeleteTodo = (id:String) => {
         setTodos((prev) =>{
-            let newTodos = prev.map((filterTodo) => filterTodo.id !== id);
+            let newTodos = prev.filter((filterTodo) => filterTodo.id !== id);
             return newTodos;
         })
     }
