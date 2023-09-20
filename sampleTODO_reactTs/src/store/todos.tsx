@@ -36,6 +36,8 @@ export const TodosProvider = ({children}:TodosProviderProps) => {
                 ...prev
             ]
             // console.log("data from newtodos", {newTodos, prev})
+
+            localStorage.setItem("todos", JSON.stringify(newTodos))
             return newTodos
         })
     }
@@ -50,6 +52,7 @@ export const TodosProvider = ({children}:TodosProviderProps) => {
                 }
                 return todo;
             })
+            localStorage.setItem("todos", JSON.stringify(newTodos))
             return newTodos
         })
     }
@@ -58,6 +61,7 @@ export const TodosProvider = ({children}:TodosProviderProps) => {
     const handleDeleteTodo = (id:String) => {
         setTodos((prev) =>{
             let newTodos = prev.filter((filterTodo) => filterTodo.id !== id);
+            localStorage.setItem("todos", JSON.stringify(newTodos))
             return newTodos;
         })
     }
