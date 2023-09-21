@@ -64,6 +64,10 @@ nav a:hover{
     border-color: #1e4015;
 }
 
+nav a.active {
+  color: #1e4015;
+  border-color: #1a6e02;
+}
 
 /*===================*/
 /*Form  styling */
