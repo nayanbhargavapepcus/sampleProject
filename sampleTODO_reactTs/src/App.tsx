@@ -1,6 +1,7 @@
 import AddtoDo from "./components/addTodo"
 import Navbar from "./components/navbar"
 import Todos from "./components/todos"
+import "./App.css"
 
 const App = () => {
   return (

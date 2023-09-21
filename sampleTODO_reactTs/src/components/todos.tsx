@@ -19,7 +19,7 @@ const Todos = () => {
     }
 
   return (
-    <ul>
+    <ul className="main-task">
         {
             filterData.map((todo) =>{
                 return <li key={todo.id}>
