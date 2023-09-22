@@ -4,8 +4,7 @@ import { useTodos } from "../store/todos"
 const AddtoDo = () => {
     const[todo, setTodo] = useState("");
     const {handleAddToDo} = useTodos();
-
-
+    
     const handleFormSubmit = (e: FormEvent<HTMLElement>) => {
       e.preventDefault();
       handleAddToDo(todo)

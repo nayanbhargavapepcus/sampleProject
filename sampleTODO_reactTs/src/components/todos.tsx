@@ -1,4 +1,4 @@
-import { useTodos, Todo } from "../store/todos"
+import { useTodos } from "../store/todos"
 import { useSearchParams } from "react-router-dom"
 
 const Todos = () => {
@@ -6,7 +6,6 @@ const Todos = () => {
 
     const [searchParams] = useSearchParams();
     let todosData = searchParams.get("todos")
-    console.log("what are search params", todosData)
 
     let filterData = todos;
 
